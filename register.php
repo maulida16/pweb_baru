@@ -37,7 +37,7 @@ if(isset($msg)){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Register</title>
+	<title>UpdatEarthquake.id</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->	
@@ -79,17 +79,17 @@ if(isset($msg)){
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="Username">
+						<input class="input100" type="text" name="username" placeholder="Username" minlength="2">
 						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" id="password" type="password" name="password" placeholder="Password" onkeyup="check();">
+						<input class="input100" id="password" type="password" name="password" placeholder="Password" onkeyup="check();" minlength="2" maxlength="15">
 						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Confirm Password">
-						<input class="input100" id="confirm_password" type="password" name="confirm_password" placeholder="Confirm Password" onkeyup="check();">
+						<input class="input100" id="confirm_password" type="password" name="confirm_password" placeholder="Confirm Password" onkeyup="check();" minlength="2" maxlength="8">
 						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
 					</div>
 					<p style="text-align: center; margin-top: 20px;" id="message"></p>

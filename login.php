@@ -17,7 +17,7 @@
             $hash = password_hash($_POST['password'], PASSWORD_BCRYPT);
             $password = password_verify($_POST['password'], $hash);
     
-            $sql = "SELECT * FROM users WHERE `username`='$username'";
+            $sql = "SELECT * FROM user WHERE `username`='$username'";
             $result = mysqli_query($conn,$sql);
             $row = $result->fetch_assoc();
             if($row != NULL){
@@ -46,7 +46,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Beyouty</title>
+	<title>UpdatEarthquake.id</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -83,12 +83,12 @@
 				<form class="login100-form validate-form p-b-33 p-t-5" action="login.php<?php if(isset($_GET['redirectProfile'])){echo "?redirectProfile=".$_GET['redirectProfile'];}?>" method="POST">
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="Username">
+						<input class="input100" type="text" name="username" placeholder="Username" minlength="2" maxlength="8">
 						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="password" placeholder="Password">
+						<input class="input100" type="password" name="password" placeholder="Password" minlength="2">
 						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
 					</div>
 

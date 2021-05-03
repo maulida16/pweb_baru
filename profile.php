@@ -7,7 +7,7 @@
 
     include 'conn.php';
     $id=$_SESSION['id'];
-    $sql = "SELECT * FROM users WHERE id=$id LIMIT 1";
+    $sql = "SELECT * FROM user WHERE id=$id LIMIT 1";
 
     $rows = mysqli_query($conn,$sql);
     $i = 0;
@@ -23,8 +23,8 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">
-                <img src="images/navbar-logo" alt="Beyouty" width="50px">
+            <a class="navbar-brand" href="./index.php">
+                <img src="images/navbar-logo" alt="" width="50px">
             </a>
             <?php if ($_SESSION) : ?>
                 <p class="navbar-nav ml-auto mr-4 mt-2 mt-lg-0"><?php echo $_SESSION['username']?></p>
