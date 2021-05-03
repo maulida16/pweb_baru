@@ -84,7 +84,7 @@ if(isset($msg)){
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" id="password" type="password" name="password" placeholder="Password" onkeyup="check();" minlength="2" maxlength="15">
+						<input class="input100" id="password" type="password" name="password" placeholder="Password" onkeyup="check();" minlength="2">
 						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
 					</div>
 
