@@ -11,11 +11,11 @@ passwords = ["admin", "password", "jhgqiMKW4K3WQdH"]
 # passwords = loadtxt('middle-names.txt', dtype=str)
 
 i = 0
-j = 0
 f = open("result.txt", "w")
 
 # for username in username:
 #     i = i + 1
+    # j = 0
 #     print("attempt - " + str(i))
 #     for pwd in combinations:
 #         browser.open("http://localhost/kap/login.php")
@@ -40,6 +40,7 @@ f = open("result.txt", "w")
 
 for username in username:
     i = i + 1
+    j = 0
     for password in passwords:
         browser.open("http://localhost/kap/login.php")
         browser.select_form('form[action="login.php"]')
