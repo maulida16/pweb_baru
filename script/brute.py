@@ -5,7 +5,7 @@ import itertools
 browser = mechanicalsoup.StatefulBrowser()
 username = ["user", "admin", "username"]
 passwords = ["admin", "password", "jhgqiMKW4K3WQdH"]
-# combinations = itertools.permutations("a-zA-Z", 5)
+# combinations = itertools.permutations("a-zA-Z0-9", 5)
 
 # username = loadtxt('probable-v2-top12000.txt', dtype=str)
 # passwords = loadtxt('middle-names.txt', dtype=str)
